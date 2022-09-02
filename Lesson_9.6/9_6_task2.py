@@ -19,8 +19,6 @@ P. S. Подсказка: список в функции get_sort лучше в�
 """
 
 def get_sort(d):
-    sorted_dict = sorted(d.items(), reverse=True)
-    # print(sorted_dict)
     sorted_values = list(map(lambda pair: pair[1], sorted(d.items(), reverse=True)))
     return sorted_values
 
